@@ -1,0 +1,18 @@
+USE [MovingCompanies];
+GO
+
+CREATE NONCLUSTERED INDEX IX_Order_CustomerID
+ON [ORDER] (CustomerID);
+GO
+
+CREATE NONCLUSTERED INDEX IX_Order_OrderDate
+ON [ORDER] (OrderDate);
+GO
+
+CREATE NONCLUSTERED INDEX IX_Invoice_PaymentStatus
+ON INVOICE (PaymentStatus);
+GO
+
+CREATE NONCLUSTERED INDEX IX_VehicleAssign_VehicleID
+ON VEHICLE_ASSIGN (VehicleID);
+GO
